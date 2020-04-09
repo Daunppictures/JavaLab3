@@ -22,9 +22,9 @@ class AthleticsManagerTest extends BaseAthleticsManagerTest {
 	@Test
 	public void testFindTypesOfAthleticsByDistance() {
 
-		assertEquals(10, athletics.get(0).getDistanceInMeters());
-		assertEquals(20, athletics.get(1).getDistanceInMeters());
-		assertEquals(30, athletics.get(2).getDistanceInMeters());
+		assertEquals(100, athletics.get(0).getDistanceInMeters());
+		assertEquals(200, athletics.get(1).getDistanceInMeters());
+		assertEquals(300, athletics.get(2).getDistanceInMeters());
 
 	}
 

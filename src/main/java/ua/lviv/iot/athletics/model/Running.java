@@ -4,9 +4,11 @@ public class Running extends AbstractAthletics {
 
 	protected String typesOfRunning;
 
-	public Running(int getDistanceInMeters) {
-		super(getDistanceInMeters);
-
+	public Running(int distanceInMeters, int stageDuration, int numberOfParticipants, int numberOfRepeat) {
+		super(distanceInMeters);
+		this.stageDuration = stageDuration;
+		this.numberOfParticipants = numberOfParticipants;
+		this.numberOfRepeat = numberOfRepeat;
 	}
 
 	public String getTypesOfRunning() {

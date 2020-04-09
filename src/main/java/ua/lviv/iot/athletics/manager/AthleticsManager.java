@@ -23,8 +23,7 @@ public class AthleticsManager {
 		this.athletics.add(athletic);
 	}
 
-	public static List<AbstractAthletics> findTypesOfAthleticsByDistance(int distanceInMeters,
-			List<AbstractAthletics> athletics) {
+	public List<AbstractAthletics> findTypesOfAthleticsByDistance(int distanceInMeters) {
 
 		List<AbstractAthletics> foundAthletics = new LinkedList<>();
 		for (AbstractAthletics athletic : athletics) {
@@ -36,6 +35,14 @@ public class AthleticsManager {
 		}
 
 		return foundAthletics;
+	}
+
+	public List<AbstractAthletics> getAthletics() {
+		return athletics;
+	}
+
+	public void setAthletics(List<AbstractAthletics> athletics) {
+		this.athletics = athletics;
 	}
 
 }

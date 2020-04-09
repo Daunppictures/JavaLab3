@@ -5,8 +5,10 @@ public abstract class AbstractAthletics {
 	protected int stageDuration;
 
 	protected int numberOfParticipants;
+	
+	protected int numberOfRepeat;
 
-	int distanceInMeters;
+	protected int distanceInMeters;
 
 	public AbstractAthletics(int distanceInMeters) {
 		super();
@@ -36,5 +38,15 @@ public abstract class AbstractAthletics {
 	public void setDistanceInMeters(int distanceInMeters) {
 		this.distanceInMeters = distanceInMeters;
 	}
+
+	public int getNumberOfRepeat() {
+		return numberOfRepeat;
+	}
+
+	public void setNumberOfRepeat(int numberOfRepeat) {
+		this.numberOfRepeat = numberOfRepeat;
+	}
+	
+	
 
 }
