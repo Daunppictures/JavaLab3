@@ -5,8 +5,8 @@ import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 
-import ua.lviv.iot.athletics.model.AbstractAthletics;
-import ua.lviv.iot.athletics.model.Running;
+import ua.lviv.iot.athletics.rest.model.AbstractAthletics;
+import ua.lviv.iot.athletics.rest.model.Running;
 
 public abstract class BaseAthleticsManagerTest {
 
@@ -15,8 +15,10 @@ public abstract class BaseAthleticsManagerTest {
 	@BeforeEach
 	public void createRunning() {
 		athletics = new LinkedList<AbstractAthletics>();
-		athletics.add(new Running(10));
-		athletics.add(new Running(20));
-		athletics.add(new Running(30));
+		
+		athletics.add(new Running(100, 20, 7, 1));
+		athletics.add(new Running(200, 10, 10, 2));
+		athletics.add(new Running(300, 5, 20, 3));
+
 	}
 }
