@@ -1,12 +1,14 @@
 package ua.lviv.iot.athletics.rest.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 import ua.lviv.iot.athletics.rest.model.AbstractAthletics;
 
 @Entity
 public class Running extends AbstractAthletics {
-
+  
+  @Column
   protected String typesOfRunning;
   
   /**

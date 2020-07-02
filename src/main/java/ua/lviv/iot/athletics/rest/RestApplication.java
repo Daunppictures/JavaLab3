@@ -11,8 +11,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories({ "ua.lviv.iot.athletics.rest.dataaccess" })
 public class RestApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(RestApplication.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(RestApplication.class, args);
+  }
 
 }

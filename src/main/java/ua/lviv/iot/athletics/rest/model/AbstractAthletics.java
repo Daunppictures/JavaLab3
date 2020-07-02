@@ -1,5 +1,6 @@
 package ua.lviv.iot.athletics.rest.model;
 
+import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -7,13 +8,16 @@ import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
 public abstract class AbstractAthletics {
-
+    @Column
     protected int stageDuration;
-
+    
+    @Column
     protected int numberOfParticipants;
-
+    
+    @Column
     protected int numberOfRepeat;
-
+    
+    @Column
     protected int distanceInMeters;
     
     @Id
